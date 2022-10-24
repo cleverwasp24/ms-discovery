@@ -1,0 +1,16 @@
+server:
+  port: 8089
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8089/eureka
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+logging:
+  level:
+    '[com.netflix.eureka]': 'OFF'
+    '[com.netflix.discovery]': 'OFF'
+    '[com.nttdata.bootcamp.msdiscovery]': Info
